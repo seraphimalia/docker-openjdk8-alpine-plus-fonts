@@ -1,15 +1,13 @@
-# docker-gae-java
+# docker-openjdk8-alpine-plus-fonts
 
 ## Purpose
 
-This image was created specifically for usage with continuous integration systems, and contains the minimum requirements to deploy a project to [Google App Engine](https://appengine.google.com/). Currently being used with [wercker](https://app.wercker.com), but should meet the requirements for most CI systems.
+This image was created so that java.awt.Font would work with openjdk:8-alpine docker image.
 
 ## Details
 
 ### Base Image
 
-* [maven:3-jdk-7](https://hub.docker.com/_/maven/) - Maven 3 and JDK 7
+* [openjdk:8-alpine](https://hub.docker.com/_/openjdk/) - OpenJDK, JRE 8 Alpine
 
-### Additional Node Modules
 
-* [Google App Engine Java SDK](https://cloud.google.com/appengine/downloads) - Google APp Engine SDK. Required to deploy to Firebase.
